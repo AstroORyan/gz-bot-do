@@ -5,7 +5,7 @@ functions:
 - github:
     branch: main
     deploy_on_push: true
-    repo: digitalocean/sample-functions-python-jokes
+    repo: AstroORyan/gz-bot-do
   name: gz-bot
   routes:
   - path: /
