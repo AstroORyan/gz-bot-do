@@ -1,10 +1,5 @@
 packages:
   - name: bot
-    actions:
+    functions:
       - name: bot
         runtime: 'python:3.11'
-        triggers:
-        - name: hourly-rate
-          sourceType: scheduler
-          sourceDetails:
-            cron: "0 * * * *"
