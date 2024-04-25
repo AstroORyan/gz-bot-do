@@ -2,4 +2,11 @@ packages:
   - name: bot
     functions:
       - name: bot
+        binary: false
         runtime: 'python:3.11'
+        web: false
+        triggers: 
+          - name: trigger-image
+            sourceType: scheduler
+            sourceDetails: 
+              cron: "0 * * * *" 
