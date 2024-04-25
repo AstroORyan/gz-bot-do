@@ -1,0 +1,5 @@
+packages:
+  - name: bot
+    actions:
+      - name: bot
+        runtime: 'python:default'
