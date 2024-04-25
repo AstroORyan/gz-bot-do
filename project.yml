@@ -1,9 +1,9 @@
 packages:
   - name: bot
-    functions:
+    actions:
       - name: bot
         runtime: 'python:3.11'
-        actions:
+        triggers:
         - name: hourly-rate
           sourceType: scheduler
           sourceDetails:
