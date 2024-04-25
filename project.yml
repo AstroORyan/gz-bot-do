@@ -3,7 +3,7 @@ packages:
     functions:
       - name: bot
         runtime: 'python:3.11'
-        triggers:
+        actions:
         - name: hourly-rate
           sourceType: scheduler
           sourceDetails:

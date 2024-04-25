@@ -19,16 +19,13 @@ def create_metadata(row):
     ra = np.round(row.RA.iloc[0], 3)
     dec = np.round(row.DEC.iloc[0], 3)
     clsf = row.galaxy_description.iloc[0]
-    description = row.data_description.iloc[0]
-    if 'Hubble' in description or 'CANDELS' in description:
+    survey = row.imaging.iloc[0]
+    project = row.project.iloc[0]
+    if 'Hubble' in project:
         instr = 'Hubble Space Telescope'
-    if 'COSMOS' in description:
-        survey = 'COSMOS Field'
-    if 'GZ: Hubble' in description:
-        project = 'GZ: Hubble' 
 
     metadata = (
-"""A {} galaxy, observed with the {} in the {}.
+"""A {}, observed with the {} in the {}.
 
 It is at redshift {} and coordinates ({}, {}).
 
