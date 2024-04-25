@@ -9,9 +9,4 @@ functions:
   routes:
   - path: /
   source_dir: /
-  triggers: 
-  - name: hourly-schedule
-    sourceType: scheduler
-    sourceDetails: 
-      cron: "0 * * * *" 
 name: bot
